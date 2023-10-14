@@ -1,0 +1,639 @@
+@font-face {
+  font-family: 'Priori'; /* Font family name */
+  src: url('./Reg/PrioriSansOT-Black.otf') format('truetype'); /* Font file path and format */
+}
+
+
+/* Update the .navbar styles */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* variables */
+:root{
+  --lightpink: #F4A7BA;
+  --darkpink: #CF4764;
+  --bgcolor: #e8e8e8;
+
+}
+
+body{
+  font-family: "Priori", sans-serif;
+  font-weight: lighter;
+  min-height: 100vh;
+}
+
+img{
+  display: block;
+}
+
+.navbar{
+  position: fixed;
+  z-index: 1000;
+  width: 100%; height: 80px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+}
+
+.links-a{
+  text-transform: uppercase;
+  text-decoration: none;
+  font: 1.3rem 'Priori';
+  padding: 3px 0 ;
+  margin: 0 8px;
+  color: var(--lightpink);
+  transition: 0.4s ease-in-out;
+}
+
+.links-a:hover{
+  color: white;
+  border-top: 2px solid white;
+  padding: 5px 0;
+  border-bottom: 2px solid white;
+}
+
+.logo{
+  width: 464px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img{  
+  width: 53%; height: 100%;
+  margin-left: 25px;
+
+
+}
+
+.sm-icons{
+
+  margin: 0 0 0 65px;
+}
+.icons{
+  margin: 0 10px;
+  font: 0.9rem "Priori";
+  color: var(--lightpink);
+}
+
+.icons:hover{
+  color: white;
+}
+
+/* Center the .hero section using Grid */
+.main {
+  
+  height: 100vh; /* Ensure the main container takes up the full viewport height */
+  background-color: var(--bgcolor);
+}
+
+.hero {
+  width: 1450px;
+  height: 740px;
+}
+
+.hero-container{
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.hero-img{
+ width: 97% ; height: 100%;
+ background: url(./img/hero\ image.jpg) no-repeat center center / cover;
+ display: flex;
+ justify-content: center;
+ align-items: end;
+}
+
+
+.hero-btn{
+  width: 100%; height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: start; 
+}
+
+
+.btn{
+  margin-top: 5px;
+  width: 200px; height: 40px;
+  padding: 13px 47px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  font-family: inherit;
+  font-size: 1.1rem;
+  color: white;
+  background-color: var(--lightpink) !important;
+}
+
+.btn:hover{
+  background-color: var(--darkpink) !important;
+}
+
+/* FIRST HERO SECTION DONE */
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+
+/* Next hero section */
+
+.members-store{
+  min-width: 1590px; height: 1320px;
+  background-color: var(--lightpink);
+}
+
+.shop-store{
+  width: 96%; height: 12%;
+  font-size: 50px;
+  padding: 15px;
+}
+
+
+
+.shop-prod{
+  /* these width and height are relative to big container  */
+    width: 90%; height: 70%; 
+    padding-top: 25px;
+    margin: 0px 80px;  
+    
+   
+}
+
+/* grid applied to all the boxes */
+.products{
+  width: 100%; height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 30px;
+  gap: 1em;
+}
+
+.box{
+ 
+  color: white;
+}
+
+.box:first-child{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+.box:nth-child(2){
+  padding: 10px;
+  display: grid;
+  grid-template-rows: auto auto; /* Two rows, content determines their heights */
+  justify-items: center; /* Center the content horizontally */
+  position: relative;
+
+}
+
+.box:nth-child(3){
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.box:nth-child(4){
+  padding: 10px;
+  display: grid;
+  grid-template-rows: auto auto; /* Two rows, content determines their heights */
+  justify-items: center; /* Center the content horizontally */
+  position: relative;
+
+}
+
+
+.box:nth-child(5){
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.box:nth-child(6){
+  padding: 10px;
+  display: grid;
+  grid-template-rows: auto auto; /* Two rows, content determines their heights */
+  justify-items: center; /* Center the content horizontally */
+  position: relative;
+}
+
+
+.box:nth-child(7){
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.box:last-child{
+  padding: 10px;
+  display: grid;
+  grid-template-rows: auto auto; /* Two rows, content determines their heights */
+  justify-items: center; /* Center the content horizontally */
+  position: relative;
+}
+
+/* the textbox that needs to come below the image */
+.text-box{
+  width: 279px; 
+  padding: 20px;
+  background-color: hsla(347, 59%, 55%, 0.445);
+  position: absolute;
+  bottom: 15px;
+}
+
+.text-box:hover{
+  background-color: white;
+}
+
+.line1{
+  display: flex;
+  justify-content: center;
+}
+
+.p-text{
+  width: 238px; height: 44px;
+  font-size:22px;
+  margin: 11.2px 0px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+.hidden-lines {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out; /* Smooth transition for height */
+}
+
+.text-box:hover .p-text{
+  color: black;
+}
+
+
+.text-box:hover .hidden-lines {
+  display: flex;
+  flex-direction: column;
+  height: 65px; /* Adjust the height as needed to show lines 2 and 3 */
+  overflow: visible;
+  
+}
+
+.text-box:hover .hidden-lines .line2{
+  height: 55px; width: 100%;
+  text-align: center;
+}
+
+.text-box:hover .hidden-lines .line3{
+  height: 45px; width: 100%;
+  text-align: center;
+}
+
+.line2{
+  color: black;
+  font-size: 18px;
+}
+
+.line3{
+  color: var(--lightpink);
+}
+
+
+/* even options */
+
+.img-box2{
+  position: relative;
+  top: 105px;
+}
+.text2-box {
+  width: 279px;
+  padding: 20px;
+  background-color: hsla(347, 59%, 55%, 0.445);
+  position: absolute;
+  bottom: -30px; /* Adjust the negative bottom value for the desired overlap */
+  z-index: 1; /* Ensure the textbox is above the image */
+}
+
+.text2-box:hover{
+  background-color: white;
+}
+
+.text2-box:hover .p-text{
+  color: black;
+}
+
+.text2-box:hover .hidden-lines {
+  display: flex;
+  flex-direction: column;
+  height: 65px; /* Adjust the height as needed to show lines 2 and 3 */
+  overflow: visible;
+  
+}
+
+.text2-box:hover .hidden-lines .line2{
+  height: 55px; width: 100%;
+  text-align: center;
+}
+
+.text2-box:hover .hidden-lines .line3{
+  height: 45px; width: 100%;
+  text-align: center;
+}
+
+/* button under these boxes */ 
+.btn-pg2{
+  width: 100%; height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 100px;
+}
+
+.page2-btn{
+  margin-top: 5px;
+  width: 200px; height: 40px;
+  padding: 13px 47px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  font-family: inherit;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #cf476433;
+}
+
+.page2-btn:hover{
+  background-color: var(--darkpink);
+}
+
+/* NEW SECTION - HOME MUSIC */
+
+.outer-sec{
+  width: 1605px;
+  height: 990px;
+  background-color: black;
+  position: relative;
+  display: grid;
+  place-content: center;
+}
+
+.img-album{
+  width: 550px; height: 680px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+.img-album::before {
+  content: "";
+  position: absolute;
+  top: 130px; /* Adjust the positioning to overlap the outer border */
+  left: 65px; /* Adjust the positioning to overlap the outer border */
+  right: 65px; /* Adjust the positioning to overlap the outer border */
+  bottom: 130px; /* Adjust the positioning to overlap the outer border */
+  border: 16px solid #691d2d;
+ 
+}
+
+.listen-now{
+  width: 455px;
+  height: 160px;
+  margin-left: 24px;
+  position: absolute;
+  top: 800px;
+}
+
+/* NEW SECTION  */
+
+.video-sec{
+  width: 1600px; height: 825px;
+  padding: 150px 0;
+  background-color: var(--lightpink);
+}
+
+.video{
+  width: 1583px; height: 492px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container{
+  width: 100%; height: 100%;
+  position: relative;
+  
+}
+
+.vid-title{
+  position: absolute;
+  top: 550px;
+  margin-left: 20px;
+}
+
+.yt-btn{
+  position: absolute;
+  top: 565px;
+  left: 1300px;
+  margin-left: 20px;
+}
+
+/* NEW SECTION- WORLD TOUR */
+
+.wld-tour{
+  width: 1600px; height: 1088px;
+  background-color: black;
+}
+
+.wld-vid{
+  width: 100%; height: 99%;
+}
+
+/* NEW SECTION-Subscribe */
+
+.subs-pg{
+  width: 1600px; height: 851px;
+  padding: 150px 0;
+  background-color: var(--lightpink);
+}
+
+.subs-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subs-title{
+  width: 1120px; height: 163px;
+  padding: 0 0 20px;
+  display: grid;
+  place-content: center;
+}
+
+/* grid applying */
+.subs-form{
+  width: 1000px; height: 388px;
+  /* background-color: rgb(178, 201, 125); */
+  margin: 30px 0;
+  display: grid;
+  place-content: center;
+}
+
+
+.cnem{
+  display: flex;
+  flex-direction: row;
+}
+.email {
+  width: 300px; height: 84px;
+  background-color: salmon;
+}
+
+.email-dg{
+  margin: 0 0 8px;
+  font: 16px "Priori";
+  color: black;
+
+}
+
+.email-dgt{
+  padding: 0 8px;
+  border: none;
+  outline: none; /* Remove the focus outline */
+  border-bottom: 4px solid #470202; /* Add a single line under the input */
+}
+
+
+
+/* Style the line when the input is focused */
+input[type="email"]:focus {
+  border-bottom: 85px solid #007bff; /* Change the line color and thickness on focus */
+}
+
+
+.country{
+  width: 300px; height: 84px;
+
+  background-color: rgb(37, 24, 22);
+}
+
+.required{
+  width: 600px; height: 50px;
+  background-color: rgb(43, 114, 75);
+}
+
+.para {
+  width: 600px; height: 147px;
+  background-color: rgb(133, 141, 137);
+}
+
+.btn {
+  grid-area: ft;
+  background-color: salmon;
+}
+
+.subs-grid{
+  width: 600px; height: 333px;
+  background-color: seashell;
+}
+
+
+.subs-btn-design{
+  margin-top: 5px;
+  width: 600px; height: 40px;
+  padding: 13px 47px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  font-family: inherit;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #cf476433;
+}
+
+.subs-btn-design:hover{
+  background-color: var(--darkpink);
+}
+
+
+
+
+/* footer */
+
+.footer{
+  width: 1600px; height: 55px;
+  background-color: var(--lightpink);
+  padding: 10px 0 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container{
+  width: 710px; height: 45px;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.copy{
+  width: 342px; height: 19px;
+  margin-right: 24px;
+  
+}
+
+.copy-d{
+  font-size: 17px;
+  color: black;
+  margin: 0 10px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.legal{
+  width: 326px; height: 27px;
+}
+
+
+.legal-d{
+  width: 50px; height: 27px;
+  margin: 0 10px;
+  font-size: 17px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.legal-d:hover , .copy-d:hover{
+  color: white;
+}
+
